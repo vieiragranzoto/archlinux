@@ -2,7 +2,6 @@
 
 sudo timedatectl set-ntp true
 sudo hwclock --systohc
-sudo locale-gen
 
 sudo reflector -c Brazil -a 12 --sort rate --save /etc/pacman.d/mirrorlist
 sudo pacman -Syy
@@ -18,3 +17,6 @@ makepkg -si
 sudo pacman -S --noconfirm sway wayland xorg-xwayland alacritty rofi firefox nemo pulseaudio pulseaudio-alsa alsa-utils pulseaudio-alsa pavucontrol neofetch zsh zsh-completions
 
 mkdir -p ~/.config/sway
+mkdir ~/.config/alacritty
+mkdir ~/.config/gtk-3.0
+mkdir ~/.config/rofi
