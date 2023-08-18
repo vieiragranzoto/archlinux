@@ -14,9 +14,24 @@ git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 
+rm -rf yay
+
 sudo pacman -S --noconfirm sway wayland xorg-xwayland alacritty rofi firefox nemo pulseaudio pulseaudio-alsa alsa-utils pulseaudio-alsa pavucontrol neofetch zsh zsh-completions
 
-mkdir -p ~/.config/sway
-mkdir ~/.config/alacritty
-mkdir ~/.config/gtk-3.0
-mkdir ~/.config/rofi
+git clone https://github.com/vieiragranzoto/dotfiles.git
+
+chsh -s /usr/bin/zsh
+
+zsh
+
+q
+
+cd dotfiles
+mv .zshrc ~
+mv .gtk-2.0 ~
+mv .config ~
+mv .mozilla ~
+
+cd
+
+rm -rf dotfiles
