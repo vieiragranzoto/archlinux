@@ -26,6 +26,8 @@ zsh
 
 q
 
+mkdir -p Images/Wallpapers
+
 cd dotfiles
 mv .zshrc ~
 mv .gtk-2.0 ~
