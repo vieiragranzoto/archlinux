@@ -16,7 +16,7 @@ makepkg -si
 
 rm -rf yay
 
-sudo pacman -S --noconfirm sway wayland xorg-xwayland alacritty rofi firefox nemo pulseaudio pulseaudio-alsa alsa-utils pulseaudio-alsa pavucontrol neofetch zsh zsh-completions
+sudo pacman -S --noconfirm sway wayland xorg-xwayland waybar swaybg alacritty rofi firefox nemo pulseaudio pulseaudio-alsa alsa-utils pulseaudio-alsa pavucontrol neofetch zsh zsh-completions ttf-fantasque-nerd ttf-jetbrains-mono-nerd grim feh slurp gtk2 gnome-themes-extra adwaita-icon-theme
 
 git clone https://github.com/vieiragranzoto/dotfiles.git
 
@@ -26,14 +26,21 @@ zsh
 
 q
 
-mkdir -p Images/Wallpapers
-
 cd dotfiles
 mv .zshrc ~
 mv .gtk-2.0 ~
 mv .config ~
 mv .mozilla ~
+mv Images ~
 
 cd
 
 rm -rf dotfiles
+
+mkdir .config/zsh
+
+yay --noconfirm -S autotiling
+
+pulseaudio -D
+
+reboot
