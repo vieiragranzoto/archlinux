@@ -29,6 +29,7 @@ mv Images ~
 cd
 
 rm -rf dotfiles
+rm -rf yay
 
 mkdir .config/zsh
 
