@@ -26,5 +26,3 @@ useradd -m -G wheel -s /bin/bash pri
 echo pri:password | chpasswd
 
 echo "pri ALL=(ALL) ALL" >> /etc/sudoers.d/pri
-
-rm -rf archlinux
