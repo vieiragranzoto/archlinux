@@ -22,8 +22,6 @@ systemctl enable vboxservice.service
 git clone https://github.com/vieiragranzoto/dotfiles.git
 
 cd dotfiles
-mv .zshrc ~
-mv .gtkrc-2.0 ~
 mv .config ~
 mv .mozilla ~
 mv Images ~
