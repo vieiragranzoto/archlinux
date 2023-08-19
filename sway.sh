@@ -32,6 +32,8 @@ rm -rf dotfiles
 
 mkdir .config/zsh
 
+mv .config/.gtkrc-2.0 ~
+
 yay --noconfirm -S autotiling
 
 pulseaudio -D
