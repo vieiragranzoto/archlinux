@@ -12,7 +12,7 @@ sudo firewall-cmd --reload
 
 git clone https://aur.archlinux.org/yay.git
 cd yay
-makepkg -si
+makepkg -si --noconfirm 
 
 # Remove virtualbox-guest-utils if not needed
 sudo pacman -S --noconfirm virtualbox-guest-utils sway wayland xorg-xwayland waybar swaybg alacritty rofi firefox nemo pulseaudio pulseaudio-alsa alsa-utils pulseaudio-alsa pavucontrol neofetch zsh zsh-completions ttf-fantasque-nerd ttf-jetbrains-mono-nerd grim feh slurp gtk2 gnome-themes-extra adwaita-icon-theme
@@ -39,7 +39,5 @@ yay --noconfirm -S autotiling
 pulseaudio -D
 
 chsh -s /usr/bin/zsh
-
-rm -rf archlinux
 
 reboot
