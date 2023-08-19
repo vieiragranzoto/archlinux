@@ -77,7 +77,7 @@ Remember that the first part of the Arch Linux install is manual, that is you wi
 - cp .config/.zshrc ~/.zshrc
 - reboot
 - Open terminal $mod+Return
-- nvim /etc/locale.gen
+- sudo nvim /etc/locale.gen
 - uncomment en_US.UTF-8 UTF-8
 - save and exit
 - sudo locale-gen
