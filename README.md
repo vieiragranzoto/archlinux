@@ -72,4 +72,5 @@ Remember that the first part of the Arch Linux install is manual, that is you wi
 - chmod +x sway.sh
 - cd 
 - ./archlinux/sway.sh
-- cp .config/.zshrc ~/.zshrc 
+- cp .config/.zshrc ~/.zshrc
+- reboot
