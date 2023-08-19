@@ -76,3 +76,6 @@ Remember that the first part of the Arch Linux install is manual, that is you wi
 - rm -rf archlinux
 - cp .config/.zshrc ~/.zshrc
 - reboot
+- Open terminal $mod+Return
+- sudo locale-gen
+- sudo pacman -Syy
