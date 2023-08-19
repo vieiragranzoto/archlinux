@@ -35,7 +35,7 @@ mkdir .config/zsh
 
 mv .config/.gtkrc-2.0 ~
 
-yay --noconfirm -S autotiling
+yay --noconfirm -S autotiling sublime-text-4
 
 pulseaudio -D
 
