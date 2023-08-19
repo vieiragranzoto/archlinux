@@ -15,8 +15,16 @@ cd yay
 makepkg -si
 
 rm -rf yay
+# Remove virtualbox-guest-utils if not needed
+sudo pacman -S --noconfirm virtualbox-guest-utils sway wayland xorg-xwayland waybar swaybg alacritty rofi firefox nemo pulseaudio pulseaudio-alsa alsa-utils pulseaudio-alsa pavucontrol neofetch zsh zsh-completions ttf-fantasque-nerd ttf-jetbrains-mono-nerd grim feh slurp gtk2 gnome-themes-extra adwaita-icon-theme
 
-sudo pacman -S --noconfirm sway wayland xorg-xwayland waybar swaybg alacritty rofi firefox nemo pulseaudio pulseaudio-alsa alsa-utils pulseaudio-alsa pavucontrol neofetch zsh zsh-completions ttf-fantasque-nerd ttf-jetbrains-mono-nerd grim feh slurp gtk2 gnome-themes-extra adwaita-icon-theme
+systemctl enable vboxservice.service
+
+VBoxClient --clipboard
+VBoxClient --draganddrop
+VBoxClient --seamless
+VBoxClient --checkhostversion
+VBoxClient --vmsvga
 
 git clone https://github.com/vieiragranzoto/dotfiles.git
 
