@@ -51,4 +51,4 @@ yay --noconfirm -S autotiling
 
 pulseaudio -D
 
-reboot
+rm -rf archlinux
