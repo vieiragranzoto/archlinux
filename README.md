@@ -66,6 +66,7 @@ Remember that the first part of the Arch Linux install is manual, that is you wi
 - mount -a
 - reboot
 - lsblk
+- change user and root passwd
 - git clone https://github.com/vieiragranzoto/archlinux.git
 - cd archlinux
 - chmod +x sway.sh
